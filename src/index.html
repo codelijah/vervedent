@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="w-full fixed top-0 z-10">
+      <div class="w-full bg-teal/50 backdrop-blur-md drop-shadow-xl">
+        <div
+          class="bg-darkTea flex items-center justify-between p-6 md:container md:mx-auto"
+        >
+          <div class="text-white text-2xl font-light z-10">
+            <span class="font-semibold text-[26px] text-paleCyan">Verve</span>Dent
+          </div>
+
+          <div
+            class="hidden text-white space-x-6 sm:flex sm:items-center"
+          >
+            <a href="#" class="text-white font-light">About Us</a>
+            <a href="#" class="text-white font-light">Services</a>
+            <a href="#" class="text-white font-light">Pricing</a>
+            <a href="#" class="text-white font-light">Blog</a>
+            <a href="#" class="text-white font-light">Contact</a>
+
+            <a
+              href="#"
+              class="px-4 py-2 text-darkGray bg-white rounded-sm"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="block hamburger sm:hidden focus:outline-none absolute top-9 right-6 flex flex-col gap-2 z-20">
+        <span class="hamburger-top block bg-white w-6 h-[1px]"></span>
+        <span class="hamburger-bottom block bg-white w-6 h-[1px]"></span>
+      </button>
+
+      <div class="hidden nav-dropdown">
+        <div class="overflow-y-hidden hidden"></div>
+        <div
+          id="menu"
+          class="absolute flex flex-col items-center py-8 top-0 pt-20 bg-teal text-offWhite font-light w-full drop-shadow-md"
+        >
+          <div class="absolute left-6 top-7 text-white text-2xl font-light">
+            <span class="font-semibold text-[26px] text-paleCyan">Verve</span>Dent
+          </div>
+          <div class="flex flex-col items-center space-y-7 mb-6">
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <a
+            href="#"
+            class="px-10 py-2 text-darkGray font-normal bg-white rounded-sm mb-3"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="bg-teal" id="intro">
+      <div
+        class="px-6 pt-32 bg-hero sm:h-screen flex flex-col justify-center md:container md:mx-auto"
+      >
+        <div class="sm:w-[39%] md:w-full">
+          <h1
+            class="text-[27px] font-semibold text-aqua mb-6 sm:text-[36px] md:text-5xl md:font-bold md:leading-normal"
+          >
+            <div>Smile with Confidence.</div>
+            <div>Live with Comfort.</div>
+          </h1>
+          <p
+            class="text-[15px] font-light text-offWhite md:text-lg md:w-1/2 md:text-[16.8px]"
+          >
+            We offer comprehensive stomatology care with a focus on your comfort
+            and well-being. From routine checkups to advanced procedures, our
+            experienced team is here to help you achieve your healthiest smile.
+          </p>
+          <div class="flex flex-col gap-3 mb-7 mt-[370px] sm:mt-10 md:flex-row">
+            <a
+              href="#"
+              class="py-4 text-[21px] text-center text-white bg-darkTeal font-medium rounded-sm sm:px-10"
+              >Book an Appointment</a
+            >
+            <a
+              href="#"
+              class="py-4 text-[21px] text-center text-darkTeal bg-white font-medium rounded-sm sm:px-10"
+              >Our Services</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div
+        class="py-24 flex flex-col sm:flex-row sm:justify-between sm:gap-11 sm:px-6 md:container mx-auto"
+      >
+        <div class="">
+          <img
+            src="../img/about-img.avif"
+            class="w-full h-full object-cover"
+            alt=""
+          />
+          <div
+            class="bg-darkTeal ps-8 pe-2 py-4 w-60 flex ms-auto me-9 justify-end items-center gap-5 -mt-9 relative"
+          >
+            <i class="fa-solid fa-location-dot text-aqua text-4xl"></i>
+            <p class="text-offWhite text-sm">
+              123 Rue du Sourire 75008 Paris, France
+            </p>
+          </div>
+        </div>
+
+        <div class="px-6">
+          <h4 class="text-teal font-semibold">About</h4>
+          <h2
+            class="text-darkTeal text-2xl font-semibold my-5 sm:text-[28px] md:text-4xl"
+          >
+            Our Dental Clinic
+          </h2>
+          <p class="text-gray text-[15px] font-light mb-12 md:text-[17px]">
+            At Verve, we are passionate about providing exceptional stomatology
+            care in a warm and welcoming environment.
+          </p>
+          <div class="">
+            <div class="mb-12 flex flex-col sm:flex-row sm:gap-14">
+              <div>
+                <i
+                  class="fa-solid fa-trophy text-teal text-xl bg-ice px-3 py-1"
+                ></i>
+                <h3 class="text-darkTeal text-lg font-semibold mt-5 mb-2">
+                  Years of Excellence
+                </h3>
+                <p class="text-gray text-[13.5px] font-light mb-5">
+                  Established in 2000, VerveDent has been providing top dental
+                  care.
+                </p>
+              </div>
+
+              <div>
+                <i
+                  class="fa-regular fa-star text-teal text-xl bg-ice px-3 py-1"
+                ></i>
+                <h3 class="text-darkTeal text-lg font-semibold mt-5 mb-2">
+                  100% Satisfied Patients
+                </h3>
+                <p class="text-gray text-[13.5px] font-light mb-5">
+                  Over 10,000 satisfied patients have entrusted their smiles to
+                  VerveDent.
+                </p>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="text-darkTeal font-medium py-2 shadow-md shadow-lightGray block text-center w-full sm:w-40"
+              >More about Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="bg-ice" id="team">
+      <div class="text-center px-6 py-24 md:container md:mx-auto">
+        <h4 class="text-teal font-medium">Meet Us</h4>
+        <h2
+          class="text-darkTeal text-2xl font-semibold my-5 sm:text-[28px] md:text-4xl"
+        >
+          Our Passionate Team
+        </h2>
+        <p
+          class="text-gray text-[15px] font-light mx-auto sm:w-[750px] md:w-[740px] md:text-[17px]"
+        >
+          Our dedicated team is at the heart of Verve. We are a group of highly
+          qualified and experienced dentists, hygienists, and staff, all
+          committed to providing exceptional stomatology care in a warm and
+          welcoming environment.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-7">
+          <div
+            class="flex flex-col w-30 h-30 items-center justify-center mt-32"
+          >
+            <div
+              class="bg-lightGray rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../img/leadDentist.avif"
+                class="w-60 -mt-20 rounded-full object-cover"
+                alt=""
+              />
+            </div>
+            <h3 class="text-darkTeal text-[17px] font-semibold mt-3">
+              Dr. Amelia Rodriguez
+            </h3>
+            <p class="text-gray mt-1 mb-3">Lead Dentist</p>
+            <div>
+              <i
+                class="fa-brands fa-linkedin text-lg text-teal bg-white px-3 py-1"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-lg text-teal bg-white px-3 py-1"
+              ></i>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center justify-center mt-32">
+            <div
+              class="bg-lightGray rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../img/Padiatric.avif"
+                class="w-60 -mt-20 rounded-full object-cover"
+                alt=""
+              />
+            </div>
+            <h3 class="text-darkTeal text-[17px] font-semibold mt-3">
+              Dr. Sophia Chen
+            </h3>
+            <p class="text-gray mt-1 mb-3">Pediatric Dentist</p>
+            <div>
+              <i
+                class="fa-brands fa-linkedin text-lg text-teal bg-white px-3 py-1"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-lg text-teal bg-white px-3 py-1"
+              ></i>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center justify-center mt-32">
+            <div
+              class="bg-lightGray rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../img/periodontist.avif"
+                class="w-60 -mt-20 rounded-full object-cover"
+                alt=""
+              />
+            </div>
+            <h3 class="text-darkTeal text-[17px] font-semibold mt-3">
+              Dr. Elizabeth Johnson
+            </h3>
+            <p class="text-gray mt-1 mb-3">Periodontist</p>
+            <div>
+              <i
+                class="fa-brands fa-linkedin text-lg text-teal bg-white px-3 py-1"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-lg text-teal bg-white px-3 py-1"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center mt-32 hidden sm:flex show"
+          >
+            <div
+              class="bg-lightGray rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../img/oralSurgeon.avif"
+                class="w-60 -mt-20 rounded-full object-cover"
+                alt=""
+              />
+            </div>
+            <h3 class="text-darkTeal text-[17px] font-semibold mt-3">
+              Dr. Daniel Lee
+            </h3>
+            <p class="text-gray mt-1 mb-3">Oral Surgeon</p>
+            <div>
+              <i
+                class="fa-brands fa-linkedin text-lg text-teal bg-white px-3 py-1"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-lg text-teal bg-white px-3 py-1"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center mt-32 hidden sm:flex show"
+          >
+            <div
+              class="bg-lightGray rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../img/fdHygienist.avif"
+                class="w-60 -mt-20 rounded-full object-cover"
+                alt=""
+              />
+            </div>
+            <h3 class="text-darkTeal font-semibold mt-3">Sarah Miller</h3>
+            <p class="text-gray mt-1 mb-3">Dental Hygienist</p>
+            <div>
+              <i
+                class="fa-brands fa-linkedin text-lg text-teal bg-white px-3 py-1"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-lg text-teal bg-white px-3 py-1"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center mt-32 hidden sm:flex show"
+          >
+            <div
+              class="bg-lightGray rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../img/mdHygienist.avif"
+                class="w-60 -mt-20 rounded-full object-cover"
+                alt=""
+              />
+            </div>
+            <h3 class="text-darkTeal text-[17px] font-semibold mt-3">
+              Christopher Davis
+            </h3>
+            <p class="text-gray mt-1 mb-3">Dental Hygienist</p>
+            <div>
+              <i
+                class="fa-brands fa-linkedin text-lg text-teal bg-white px-3 py-1"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-lg text-teal bg-white px-3 py-1"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center mt-32 hidden sm:flex show"
+          >
+            <div
+              class="bg-lightGray rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../img/Assistant.avif"
+                class="w-60 -mt-20 rounded-full object-cover"
+                alt=""
+              />
+            </div>
+            <h3 class="text-darkTeal text-[17px] font-semibold mt-3">
+              Emily Garcia
+            </h3>
+            <p class="text-gray mt-1 mb-3">Dental Assistant</p>
+            <div>
+              <i
+                class="fa-brands fa-linkedin text-lg text-teal bg-white px-3 py-1"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-lg text-teal bg-white px-3 py-1"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center mt-32 hidden sm:flex show"
+          >
+            <div
+              class="bg-lightGray rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../img/MAssistant.avif"
+                class="w-60 -mt-20 rounded-full object-cover"
+                alt=""
+              />
+            </div>
+            <h3 class="text-darkTeal text-[17px] font-semibold mt-3">
+              Michael Thompson
+            </h3>
+            <p class="text-gray mt-1 mb-3">Dental Assistant</p>
+            <div>
+              <i
+                class="fa-brands fa-linkedin text-lg text-teal bg-white px-3 py-1"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-lg text-teal bg-white px-3 py-1"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center mt-32 hidden sm:flex show"
+          >
+            <div
+              class="bg-lightGray rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../img/2fAssistant.avif"
+                class="w-60 -mt-20 rounded-full object-cover"
+                alt=""
+              />
+            </div>
+            <h3 class="text-darkTeal text-[17px] font-semibold mt-3">
+              Olivia Hernandez
+            </h3>
+            <p class="text-gray mt-1 mb-3">Dental Assistant</p>
+            <div>
+              <i
+                class="fa-brands fa-linkedin text-lg text-teal bg-white px-3 py-1"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-lg text-teal bg-white px-3 py-1"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="text-darkTeal bg-white font-medium py-2 shadow-lg shadow-lightGray w-full text-center mt-12 sm:hidden view"
+        >
+          View all Team
+        </button>
+      </div>
+    </section>
+
+    <!-- services Section one-->
+    <section id="services_one">
+      <div class="px-6 py-24 md:container md:mx-auto">
+        <h4 class="text-teal font-medium">Services</h4>
+        <h3
+          class="text-darkTeal text-2xl font-semibold my-5 sm:text-[28px] md:text-4xl"
+        >
+          General & Cosmetic Dentistry
+        </h3>
+        <p class="text-gray text-[15px] font-light mb-12 md:text-[17px]">
+          Transform your smile with our General & Cosmetic Dentistry services.
+          From routine exams to smile makeovers, our expert team ensures
+          comprehensive care for a confident and radiant smile.
+        </p>
+        <div class="flex flex-col md:flex-row md:flex-row-reverse md:gap-10">
+          <div>
+            <img
+              src="../img/teeth.avif"
+              class="w-full h-full object-cover mb-10 md:mb-0"
+              alt=""
+            />
+          </div>
+          <div>
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <h3 class="text-darkTeal font-semibold mb-3">
+                  Comprehensive Dental Exams
+                </h3>
+                <p class="text-gray text-[13.5px] font-light">
+                  Regular check-ups ensure the early detection of issues,
+                  promoting proactive care and maintaining optimal oral health.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-darkTeal font-semibold mb-3">
+                  Professional Teeth Cleaning
+                </h3>
+                <p class="text-gray text-[13.5px] font-light">
+                  Our skilled hygienists use advanced techniques to remove
+                  plaque and tartar, leaving your teeth clean and refreshed.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-darkTeal font-semibold mt-7 mb-3">
+                  Digital X-rays and Diagnostics
+                </h3>
+                <p class="text-gray text-[13.5px] font-light">
+                  Utilizing state-of-the-art technology, we provide precise
+                  diagnostics for a thorough understanding of your oral health.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-darkTeal font-semibold mt-7 mb-3">
+                  Teeth Whitening
+                </h3>
+                <p class="text-gray text-[13.5px] font-light">
+                  Brighten your smile with professional teeth whitening,
+                  tailored to your preferences for a dazzling, confident
+                  appearance.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-darkTeal font-semibold mt-7 mb-3">
+                  Porcelain Veneers
+                </h3>
+                <p class="text-gray text-[13.5px] font-light">
+                  Correct imperfections and achieve a flawless smile with
+                  custom-crafted porcelain veneers, enhancing both form and
+                  function.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-darkTeal font-semibold mt-7 mb-3">
+                  Smile Makeovers
+                </h3>
+                <p class="text-gray text-[13.5px] font-light">
+                  Transform your smile comprehensively with personalized
+                  treatments, addressing multiple aspects to achieve your
+                  desired aesthetic goals.
+                </p>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="text-darkTeal bg-white font-medium py-2 shadow-lg shadow-lightGray block text-center mt-12 w-full sm:w-40"
+              >View Pricing</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="bg-offWhite" id="services_two">
+      <div class="text-center px-6 py-24 md:container md:mx-auto">
+        <h4 class="text-teal font-medium">Services</h4>
+        <h3
+          class="text-darkTeal text-2xl font-semibold my-5 sm:text-[28px] md:text-4xl"
+        >
+          Specialized & Preventive Care
+        </h3>
+        <p class="text-gray text-[15px] font-light mb-12 md:text-[17px]">
+          Transform your smile with our General & Cosmetic Dentistry services.
+          From routine exams to smile makeovers, our expert team ensures
+          comprehensive care for a confident and radiant smile.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row sm:justify-center sm:items-center sm:gap-14 md:gap-36 mx-auto"
+        >
+          <div class="flex flex-col items-center gap-3 sm:mb-7">
+            <div class="bg-white p-8 rounded-full border border-teal mb-4">
+              <img src="../img/injection.png" class="" alt="" />
+            </div>
+            <h3 class="text-darkTeal font-semibold mb-3">
+              Restorative & Surgical Services
+            </h3>
+            <p class="text-gray text-[13.5px] font-light">
+              <i
+                class="fa-solid fa-check text-teal bg-ice p-1 rounded-full"
+              ></i>
+              Restorative Dentistry
+            </p>
+            <p class="text-gray text-[13.5px] font-light">
+              <i
+                class="fa-solid fa-check text-teal bg-ice p-1 rounded-full"
+              ></i>
+              Oral Surgery
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-3 mt-12 sm:mt-0">
+            <div class="bg-white p-8 rounded-full border border-teal mb-4">
+              <img src="../img/bandage.png" class="" alt="" />
+            </div>
+            <h3 class="text-darkTeal font-semibold mb-3">
+              Specialized Treatments
+            </h3>
+            <p class="text-gray text-[13.5px] font-light">
+              <i
+                class="fa-solid fa-check text-teal bg-ice p-1 rounded-full"
+              ></i>
+              Traditional Braces
+            </p>
+            <p class="text-gray text-[13.5px] font-light">
+              <i
+                class="fa-solid fa-check text-teal bg-ice p-1 rounded-full"
+              ></i>
+              Invisalign Clear Aligners
+            </p>
+            <p class="text-gray text-[13.5px] font-light">
+              <i
+                class="fa-solid fa-check text-teal bg-ice p-1 rounded-full"
+              ></i>
+              Retainers and Post-Treatment Care
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-3 mt-12 sm:mt-0">
+            <div class="bg-white p-8 rounded-full border border-teal mb-4">
+              <img src="../img/tooth.png" class="" alt="" />
+            </div>
+            <h3 class="text-darkTeal font-semibold mb-3">
+              Comfort and Emergency Solutions
+            </h3>
+            <p class="text-gray text-[13.5px] font-light">
+              <i
+                class="fa-solid fa-check text-teal bg-ice p-1 rounded-full"
+              ></i>
+              Sedation Dentistry
+            </p>
+            <p class="text-gray text-[13.5px] font-light">
+              <i
+                class="fa-solid fa-check text-teal bg-ice p-1 rounded-full"
+              ></i>
+              TMJ/TMD Treatment
+            </p>
+            <p class="text-gray text-[13.5px] font-light">
+              <i
+                class="fa-solid fa-check text-teal bg-ice p-1 rounded-full"
+              ></i>
+              Emergency Dentistry
+            </p>
+          </div>
+        </div>
+        <a
+          href="#"
+          class="text-darkTeal bg-white font-medium py-2 shadow-lg shadow-lightGray block text-center mt-12 w-full sm:mx-auto sm:w-40"
+          >View Pricing</a
+        >
+      </div>
+    </section>
+
+    <!-- Appointment -->
+    <section class="bg-teal" id="appointment">
+      <div class="px-6 py-24 md:container md:mx-auto">
+        <div class="w-full md:w-2/5">
+          <h4
+            class="text-aqua text-[22px] font-semibold my-5 sm:text-[28px] md:text-4xl"
+          >
+            Book an Appointment
+          </h4>
+          <p class="text-offWhite text-[15px] font-light mb-12 md:text-[17px]">
+            Schedule your visit now for personalized care in a comfortable
+            environment. Your journey to a brighter, healthier smile begins
+            here.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row md:items-start md:items-center">
+          <div class="bg-darkTeal px-7 py-12 sm:px-12 md:w-2/5 md:h-auto">
+            <h3 class="text-aqua text-lg font-semibold mb-3">
+              Our Working Program
+            </h3>
+            <div class="flex justify-between border-b border-teal py-3">
+              <p class="text-lightGray">Monday</p>
+              <span class="text-[16.8px] text-lightGray">08:00 - 18:00</span>
+            </div>
+            <div class="flex justify-between border-b border-teal py-3">
+              <p class="text-lightGray">Tuesday</p>
+              <span class="text-[16.8px] text-lightGray">08:00 - 18:00</span>
+            </div>
+            <div class="flex justify-between border-b border-teal py-3">
+              <p class="text-lightGray">Wednesday</p>
+              <span class="text-[16.8px] text-lightGray">08:00 - 18:00</span>
+            </div>
+            <div class="flex justify-between border-b border-teal py-3">
+              <p class="text-lightGray">Thursday</p>
+              <span class="text-[16.8px] text-lightGray">08:00 - 18:00</span>
+            </div>
+            <div class="flex justify-between border-b border-teal py-3">
+              <p class="text-lightGray">Friday</p>
+              <span class="text-[16.8px] text-lightGray">08:00 - 18:00</span>
+            </div>
+            <div class="flex justify-between border-b border-teal py-3">
+              <p class="text-lightGray">Saturday</p>
+              <span class="text-[16.8px] text-lightGray">08:00 - 14:00</span>
+            </div>
+            <div class="flex justify-between py-3">
+              <p class="text-lightGray">Sunday</p>
+              <span class="text-lightGray">Closed</span>
+            </div>
+          </div>
+
+          <div class="relative w-full md:w-3/5 md:h-[580px]">
+            <img
+              src="../img/about-img.avif"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+
+            <div
+              class="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-t from-darkTeal to-white/0"
+            ></div>
+
+            <div class="absolute inset-0 flex items-center justify-center">
+              <a
+                href="#"
+                class="bg-darkTeal text-white text-[22px] font-medium py-3 px-6 w-[90%] text-center sm:w-72"
+              >
+                Book An Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-offWhite" id="newsletter">
+      <div class="px-6 py-20 md:container md:mx-auto">
+        <div
+          class="bg-teal px-5 pt-12 pb-6 flex flex-col sm:flex-row sm:items-center sm:gap-10 sm:px-12 sm:py-14"
+        >
+          <div class="sm:w-1/2">
+            <h4
+              class="text-aqua text-[22px] font-semibold pb-5 sm:text-[28px] md:text-4xl"
+            >
+              Subscribe to Newsletter!
+            </h4>
+            <p
+              class="text-offWhite text-[15px] font-light mb-12 sm:mb-0 md:text-[17px]"
+            >
+              Latest updates on dental care tips, exclusive promotions, and
+              exciting news. Join our community of smiles today!
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-3 sm:w-1/2">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="ilorielijah@gmail.com"
+              class="w-full px-4 py-3"
+            />
+
+            <button
+              type="submit"
+              class="bg-darkTeal text-white px-4 py-3 w-full"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-darkTeal" id="footer">
+      <div class="px-6 py-24 sm:px-12 md:py-28 md:container md:mx-auto">
+        <div
+          class="flex flex-col gap-11 w-3/5 mb-12 md:w-full md:flex-row md:justify-between"
+        >
+          <div class="flex flex-col gap-11">
+            <h1 class="text-offWhite text-2xl font-light">
+              <span class="font-semibold text-[26px] text-paleCyan">Verve</span
+              >Dent
+            </h1>
+            <div class="flex gap-6">
+              <i
+                class="fa-brands fa-linkedin text-2xl text-teal bg-white px-3 py-1"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-2xl text-teal bg-white px-3 py-1"
+              ></i>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-aqua uppercase text-sm font-light mb-5 mb-11">
+              menu
+            </p>
+            <div
+              class="text-sm flex justify-between text-white gap-5 md:flex-col"
+            >
+              <div class="flex flex-col gap-5">
+                <a href="#" class="hover:underline">About Us</a>
+                <a href="#" class="hover:underline hidden md:block">Services</a>
+                <a href="#" class="hover:underline">Pricing</a>
+                <a href="#" class="hover:underline md:hidden">Contact</a>
+              </div>
+              <div class="flex flex-col gap-5">
+                <a href="#" class="hover:underline hidden md:block">Blog</a>
+                <a href="#" class="hover:underline hidden md:block">Contact</a>
+                <a href="#" class="hover:underline md:hidden">Services</a>
+                <a href="#" class="hover:underline md:hidden">Blog</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-aqua uppercase text-sm font-light mb-5 mb-11">
+              useful links
+            </p>
+            <div
+              class="text-sm flex justify-between text-white gap-4 md:flex-col"
+            >
+              <div class="flex flex-col gap-5">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline hidden md:block">Cookie Policy</a>
+                <a href="#" class="hover:underline">Licensing</a>
+              </div>
+              <div class="flex flex-col gap-5">
+                <a href="#" class="hover:underline md:hidden">Cookie Policy</a>
+                <a href="#" class="hover:underline">404</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-aqua uppercase text-sm font-light mb-5 mb-11">
+              contact
+            </p>
+            <div class="flex flex-col gap-5">
+              <div>
+                <p class="text-sm flex text-white">123 Rue du Sourire 75008</p>
+                <p class="text-sm flex text-white">Paris, France</p>
+              </div>
+              <div class="flex justify-between md:flex-col md:gap-5">
+                <a href="#" class="text-sm flex text-white hover:underline"
+                  >ilorielijah@gmail.com</a
+                >
+                <p class="text-sm flex text-white hover:underline">
+                  +44 111 333 555
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center text-sm text-white py-4 border-t border-aqua pt-10"
+        >
+          Design inspired by
+          <a
+            href="https://www.framer.com/marketplace/templates/vervedent/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-600 hover:underline"
+          >
+            VerveDent by Cristian Mielu
+          </a>
+          on Framer.
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

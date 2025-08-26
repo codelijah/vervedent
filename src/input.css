@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-inter;
+}
+
+/* .menuBtn.active {
+  transform
+} */
+
+.active .hamburger-top {
+  transform: translateY(9px) rotate(45deg);
+  /* transform: translateY(9px); */
+  /* transform: rotate(45deg) */
+}
+
+.active .hamburger-bottom {
+  transform: translateY(0px) rotate(-45deg);
+}
+
+
+
+.bg-hero {
+  background-image: url('../img/intro-image.avif');
+  background-repeat: no-repeat;
+
+  /* background-position: center; */
+}
+
+@media (max-width: 810px) {
+  .bg-hero {
+    background-image: url('../img/intro-image.avif');
+
+    background-size: 340px auto;
+    background-position-x: center;
+    background-position-y: 315px;
+    /* background-position: center; */
+  }
+}
+
+@media (min-width: 810px) and (max-width: 1200px) {
+  .bg-hero {
+    background-size: 1070px auto;
+    background-position-x: calc(100% + 260px);
+    background-position-y: -65px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-hero {
+    background-size: 530px auto;
+    /* background-attachment: fixed; */
+    background-position-x: calc(100% - 30px);
+    background-position-y: 165px;
+  }
+}
