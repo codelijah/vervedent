@@ -22,19 +22,20 @@
 
 ## Project Structure
 
-vervedent-tailwind/
+## Project Structure
+
+vervedent/
 ├── img/
 ├── node_modules/
-├── src/ 
-│   ├── input.css 
-│   ├── output.css 
-│   ├── index.html 
-│   └── js/
+├── src/
+│   ├── input.css
+│   ├── output.css
+│   ├── index.html
+│   └── script.js
 ├── .prettierrc
 ├── package.json
 ├── README.md
 └── tailwind.config.js
-
 
 ## Getting Started
 
@@ -63,11 +64,11 @@ Ensure you have the following installed:
    Use a local server (e.g., Live Server for VS Code) to view the project, or open src/index.html in a browser.
 
 ## Contribution
-1. Fork the repository.
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a Pull Request.
+1. Fork the repository to your own GitHub account.
+2. Create a feature branch.
+3. Make your changes and commit them.
+4. Test thoroughly to ensure your changes work as expected.
+5. Submit a Pull Request describing your changes.
 
 
 
