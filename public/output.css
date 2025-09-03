@@ -576,17 +576,16 @@ body {
 }
 
 .bg-hero {
-  background-image: url('../img/intro-image.avif');
+  background-image: url('img/intro-image.avif');
   background-repeat: no-repeat;
 }
 
 @media (max-width: 810px) {
   .bg-hero {
-    background-image: url('../img/intro-image.avif');
+    background-image: url('img/intro-image.avif');
     background-size: 340px auto;
     background-position-x: center;
     background-position-y: 315px;
-    /* background-position: center; */
   }
 }
 
@@ -601,7 +600,6 @@ body {
 @media (min-width: 1200px) {
   .bg-hero {
     background-size: 530px auto;
-    /* background-attachment: fixed; */
     background-position-x: calc(100% - 30px);
     background-position-y: 165px;
   }
