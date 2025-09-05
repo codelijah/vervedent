@@ -17,8 +17,8 @@ viewTeamBtn.addEventListener('click', function () {
 });
 
 menuBtn.addEventListener('click', function () {
-  // navDropDown.classList.toggle('hidden');
-  // navDropDown.classList.toggle('pointer-events-none');
+  navDropDown.classList.toggle('pointer-events-none');
+  navDropDown.classList.toggle('pointer-events-auto');
   navDropDown.classList.toggle('opacity-0');
   document.body.classList.toggle('overflow-y-hidden');
   navDropDown.classList.toggle('opacity-100');

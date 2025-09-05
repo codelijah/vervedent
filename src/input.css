@@ -6,6 +6,16 @@
   body {
     @apply font-inter;
   }
+}
+
+@layer components {
+  .btn-glow {
+    @apply transition-shadow duration-300;
+  }
+
+  .btn-glow:hover {
+    @apply shadow-[0_0_5px_5px_rgba(225,225,225,0.3)];
+  }
 
   .nav-transition {
     transition: all 0.4s ease-in-out;
@@ -53,15 +63,5 @@
       background-position-x: calc(100% - 30px);
       background-position-y: 165px;
     }
-  }
-}
-
-@layer components {
-  .btn-glow {
-    @apply transition-shadow duration-300;
-  }
-
-  .btn-glow:hover {
-    @apply shadow-[0_0_5px_5px_rgba(225,225,225,0.3)];
   }
 }
