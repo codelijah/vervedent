@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VerDent - Healthcare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="../output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="w-full fixed top-0 z-10">
+      <div class="w-full bg-white backdrop-blur-md drop-shadow-xl">
+        <div
+          class="flex items-center justify-between px-6 py-6 sm:py-5 md:container md:mx-auto"
+        >
+          <div class="text-darkTeal text-2xl font-light z-10">
+            <span class="font-semibold text-[26px] text-teal">Verve</span>Dent
+          </div>
+
+          <div class="hidden text-white space-x-6 sm:flex sm:items-center">
+            <a
+              href="../about-us/"
+              class="pb-1 relative text-gray font-light after:absolute after:left-1/2 after:bottom-0 after:h-[1px] after:w-0 after:bg-darkTeal after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="pb-1 relative text-gray font-light after:absolute after:left-1/2 after:bottom-0 after:h-[1px] after:w-0 after:bg-darkTeal after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="pb-1 relative text-gray font-light after:absolute after:left-1/2 after:bottom-0 after:h-[1px] after:w-0 after:bg-darkTeal after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full"
+            >
+              Pricing
+            </a>
+
+            <a
+              href="#"
+              class="pb-1 relative text-gray font-light after:absolute after:left-1/2 after:bottom-0 after:h-[1px] after:w-0 after:bg-darkTeal after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full"
+              >Blog</a
+            >
+            <a
+              href="#"
+              class="pb-1 relative text-gray font-light after:absolute after:left-1/2 after:bottom-0 after:h-[1px] after:w-0 after:bg-darkTeal after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full"
+              >Contact</a
+            >
+
+            <a
+              href="#"
+              class="px-4 py-2 text-offWhite bg-darkTeal rounded-sm hover:shadow-[0_0_4px_4px_rgba(225,225,225,0.3)] transition-shadow duration-300"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button
+        id="menu-btn"
+        class="block hamburger sm:hidden focus:outline-none absolute top-9 right-6 flex flex-col gap-2 z-20"
+      >
+        <span class="hamburger-top block bg-dark w-6 h-[1px]"></span>
+        <span class="hamburger-bottom block bg-dark w-6 h-[1px]"></span>
+      </button>
+
+      <div class="overflow-y-hidden hidden"></div>
+      <div
+        id="menu"
+        class="nav-dropdown opacity-0 nav-transition absolute flex flex-col items-center py-8 top-0 pt-20 bg-white text-offWhite font-light w-full drop-shadow-md pointer-events-none"
+      >
+        <div class="absolute left-6 top-7 text-darkTeal text-2xl font-light">
+          <span class="font-semibold text-[26px] text-teal">Verve</span>Dent
+        </div>
+        <div class="flex flex-col items-center space-y-6 mb-6">
+          <a
+            href="../about-us/"
+            class="pb-1 relative text-gray font-light after:absolute after:left-1/2 after:bottom-0 after:h-[1px] after:w-0 after:bg-darkTeal after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full"
+            >About Us</a
+          >
+          <a
+            href="#"
+            class="pb-1 relative text-gray font-light after:absolute after:left-1/2 after:bottom-0 after:h-[1px] after:w-0 after:bg-darkTeal after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="pb-1 relative text-gray font-light after:absolute after:left-1/2 after:bottom-0 after:h-[1px] after:w-0 after:bg-darkTeal after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="pb-1 relative text-gray font-light after:absolute after:left-1/2 after:bottom-0 after:h-[1px] after:w-0 after:bg-darkTeal after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="pb-1 relative text-gray font-light after:absolute after:left-1/2 after:bottom-0 after:h-[1px] after:w-0 after:bg-darkTeal after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full"
+            >Contact</a
+          >
+        </div>
+
+        <a
+          href="#"
+          class="px-10 py-2 text-white font-normal bg-darkTeal rounded-sm mb-3 hover:shadow-[0_0_4px_4px_rgba(225,225,225,0.3)] transition-shadow duration-300"
+          >Get Started</a
+        >
+      </div>
+    </header>
+
+    <section>
+      <div class="px-6 pt-44 md:container md:mx-auto">
+        <div>
+          <h2
+            class="text-darkTeal text-3xl font-semibold my-5 sm:text-4xl md:text-5xl"
+          >
+            Transparent Pricing for Exceptional Dental Care
+          </h2>
+          <p class="text-gray text-[15px] font-light mb-20 md:text-[17px]">
+            Explore our Pricing Page to find detailed and affordable solutions
+            tailored to meet your specific dental needs. We believe in clear
+            communication, ensuring you have a comprehensive understanding of
+            the investment in your oral health.
+          </p>
+          <h3
+            class="text-darkTeal text-2xl font-semibold mb-10 sm:text-[28px] md:text-4xl"
+          >
+            General & Cosmetic Dentistry
+          </h3>
+          <h3 class="text-darkTeal font-semibold mb-6">
+            Comprehensive Dental Exams
+          </h3>
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Initial Consultation</p>
+              <span class="text-darkGray text-lg">$75</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Comprehensive evaluation and discussion of oral health concerns.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-2">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Routine Dental Exam</p>
+              <span class="text-darkGray text-lg">$90</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Thorough examination of teeth, gums, and overall oral health.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-2">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Digital X-rays</p>
+              <span class="text-darkGray text-lg">$50</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Advanced digital imaging for detailed diagnostics.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-2">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Fluoride Treatment</p>
+              <span class="text-darkGray text-lg">$40</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Application of fluoride for enhanced cavity protection.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-2">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Oral Cancer Screening</p>
+              <span class="text-darkGray text-lg">$30</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Specialized screening to detect early signs of oral cancer.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-2">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Periodontal Assessment
+              </p>
+              <span class="text-darkGray text-lg">$80</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Evaluation of gum health and identification of potential issues.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-2">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Professional Cleaning (Prophylaxis)
+              </p>
+              <span class="text-darkGray text-lg">$120</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Removal of plaque and tartar to maintain optimal oral hygiene.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-darkTeal font-semibold mb-6">
+            Professional Teeth Cleaning
+          </h3>
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Fluoride Treatment</p>
+              <span class="text-darkGray text-lg">$40</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Comprehensive evaluation and discussion of oral health concerns.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Standard Cleaning (Prophylaxis)
+              </p>
+              <span class="text-darkGray text-lg">$120</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Removal of plaque and tartar for a clean and refreshed feeling.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Standard Cleaning (Prophylaxis)
+              </p>
+              <span class="text-darkGray text-lg">$120</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Removal of plaque and tartar for a clean and refreshed feeling.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-darkTeal font-semibold mb-6">
+            Digital X-rays and Diagnostics
+          </h3>
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Diagnostic X-rays</p>
+              <span class="text-darkGray text-lg">$50</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Professional teeth whitening performed in the clinic.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Panoramic X-ray</p>
+              <span class="text-darkGray text-lg">$80</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Comprehensive imaging for a broader view of oral structures.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                CBCT Scan (Cone Beam Computed Tomography)
+              </p>
+              <span class="text-darkGray text-lg">$150</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              3D imaging for detailed diagnostics in complex cases.
+            </p>
+          </div>
+
+          <div class="mt-10">
+            <h3 class="text-darkTeal font-semibold mb-6">Porcelain Veneers</h3>
+            <div class="border-b border-offWhite pb-3">
+              <div class="flex justify-between items-center">
+                <p class="text-darkGray sm:text-lg my-3">
+                  Consultation and Assessment
+                </p>
+                <span class="text-darkGray text-lg">$75</span>
+              </div>
+              <p class="text-gray text-[13.5px] font-light">
+                Comprehensive evaluation and discussion of veneer options.
+              </p>
+            </div>
+
+            <div class="border-b border-offWhite pb-3">
+              <div class="flex justify-between items-center">
+                <p class="text-darkGray sm:text-lg my-3">
+                  Porcelain Veneer Installation
+                </p>
+                <span class="text-darkGray text-lg">$800</span>
+              </div>
+              <p class="text-gray text-[13.5px] font-light">
+                Custom-crafted veneers applied to enhance the appearance of
+                teeth.
+              </p>
+            </div>
+
+            <div class="border-b border-offWhite pb-3">
+              <div class="flex justify-between items-center">
+                <p class="text-darkGray sm:text-lg my-3">Veneer Replacement</p>
+                <span class="text-darkGray text-lg">$600</span>
+              </div>
+              <p class="text-gray text-[13.5px] font-light">
+                Removal and replacement of existing veneers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-darkTeal font-semibold mb-6">Smile Makeovers</h3>
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Comprehensive Smile Assessment
+              </p>
+              <span class="text-darkGray text-lg">$100</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Thorough evaluation to determine the best makeover approach.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Composite Bonding</p>
+              <span class="text-darkGray text-lg">$150</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Reshaping and enhancing teeth using composite material.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Orthodontic Consultation
+              </p>
+              <span class="text-darkGray text-lg">$75</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Evaluation and discussion of orthodontic treatment options.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-24">
+          <h3
+            class="text-darkTeal text-2xl font-semibold mb-10 sm:text-[28px] md:text-4xl"
+          >
+            Specialized & Preventive Care
+          </h3>
+          <h3 class="text-darkTeal font-semibold mt-10 mb-6">
+            Restorative Dentistry
+          </h3>
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Dental Fillings</p>
+              <span class="text-darkGray text-lg">$150 - $300 / filling</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Restoration of cavities using tooth-colored composite material.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Dental Crowns</p>
+              <span class="text-darkGray text-lg">$800 - $1,200 / crown</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Custom-crafted crowns to restore and strengthen damaged teeth.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Dental Bridges</p>
+              <span class="text-darkGray text-lg">$1,500 - $3,000 / unit</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Replacement of missing teeth with a fixed dental bridge.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Dental Implants</p>
+              <span class="text-darkGray text-lg"
+                >$1,500 - $3,000 / implant</span
+              >
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Permanent tooth replacement using surgical implants.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Dentures</p>
+              <span class="text-darkGray text-lg">$800 - $2,500 / arch</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Full or partial dentures for functional and aesthetic restoration.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-darkTeal font-semibold mb-6">Oral Surgery</h3>
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Tooth Extractions</p>
+              <span class="text-darkGray text-lg"
+                >$150 - $300 / extraction</span
+              >
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Removal of damaged or impacted teeth.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Wisdom Teeth Removal</p>
+              <span class="text-darkGray text-lg">$300 - $500 / tooth</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Corrective surgical procedures to address jaw abnormalities.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Jaw Surgery (Orthognathic Surgery)
+              </p>
+              <span class="text-darkGray text-lg">Personalized quote</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Corrective surgical procedures to address jaw abnormalities.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-darkTeal font-semibold mb-6">Traditional Braces</h3>
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Braces Consultation</p>
+              <span class="text-darkGray text-lg">$75</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Evaluation and discussion of orthodontic treatment options.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Traditional Metal Braces
+              </p>
+              <span class="text-darkGray text-lg">$2,500 - $6,000</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Application and ongoing adjustments.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-darkTeal font-semibold mb-6">
+            Invisalign Clear Aligners
+          </h3>
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Invisalign Consultation
+              </p>
+              <span class="text-darkGray text-lg">$75</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Evaluation and discussion of Invisalign treatment plan.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Invisalign Clear Aligners
+              </p>
+              <span class="text-darkGray text-lg">$3,000 - $8,000</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Customized series of clear aligners for discreet orthodontic
+              treatment.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-darkTeal font-semibold mb-6">
+            Retainers and Post-Treatment Care
+          </h3>
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Post-Treatment Evaluation
+              </p>
+              <span class="text-darkGray text-lg">$50</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Assessment following orthodontic or restorative treatment.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Removable Retainers</p>
+              <span class="text-darkGray text-lg">$200 - $500 / set</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Custom-made retainers to maintain orthodontic results.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-darkTeal font-semibold mb-6">Sedation Dentistry</h3>
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Nitrous Oxide (Laughing Gas)
+              </p>
+              <span class="text-darkGray text-lg">$50 - $100 / session</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Inhalation sedation for relaxation during dental procedures.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Oral Sedation</p>
+              <span class="text-darkGray text-lg">$100 - $200 / session</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Prescription medication for mild sedation before procedures.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">IV Sedation</p>
+              <span class="text-darkGray text-lg">$300 - $500 / session</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Intravenous sedation for deeper relaxation during extensive
+              procedures.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-darkTeal font-semibold mb-6">TMJ/TMD Treatment</h3>
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Diagnostic Consultation
+              </p>
+              <span class="text-darkGray text-lg">$75</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Evaluation and discussion of TMJ/TMD symptoms.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Customized Splints and Mouthguards
+              </p>
+              <span class="text-darkGray text-lg">$150 - $300</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Oral appliances to alleviate TMJ/TMD symptoms.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Physical Therapy</p>
+              <span class="text-darkGray text-lg">$50 - $100 / session</span>
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              TMJ-specific physical therapy sessions.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-darkTeal font-semibold mb-6">Emergency Dentistry</h3>
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Same-Day Emergency Appointments
+              </p>
+              <span class="text-darkGray text-lg"
+                >Additional fee may apply</span
+              >
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Immediate attention for urgent dental issues.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">Toothache Relief</p>
+              <span class="text-darkGray text-lg"
+                >Varies based on treatment needed</span
+              >
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Diagnosis and treatment to alleviate toothache.
+            </p>
+          </div>
+
+          <div class="border-b border-offWhite pb-3">
+            <div class="flex justify-between items-center">
+              <p class="text-darkGray sm:text-lg my-3">
+                Trauma and Injury Care
+              </p>
+              <span class="text-darkGray text-lg"
+                >Varies based on severity</span
+              >
+            </div>
+            <p class="text-gray text-[13.5px] font-light">
+              Emergency care for dental injuries and trauma.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-offWhite" id="appointment">
+      <div class="px-6 py-24 md:container md:mx-auto">
+        <div class="w-full md:w-2/5">
+          <h4
+            class="text-darkTeal text-[22px] font-semibold my-5 sm:text-[28px] md:text-4xl"
+          >
+            Book an Appointment
+          </h4>
+          <p class="text-gray text-[15px] font-light mb-12 md:text-[17px]">
+            Schedule your visit now for personalized care in a comfortable
+            environment. Your journey to a brighter, healthier smile begins
+            here.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row md:items-start md:items-center">
+          <div class="bg-darkTeal px-7 py-12 sm:px-12 md:w-2/5 md:h-auto">
+            <h3 class="text-aqua text-lg font-semibold mb-3">
+              Our Working Program
+            </h3>
+            <div class="flex justify-between border-b border-teal py-3">
+              <p class="text-lightGray">Monday</p>
+              <span class="text-[16.8px] text-lightGray">08:00 - 18:00</span>
+            </div>
+            <div class="flex justify-between border-b border-teal py-3">
+              <p class="text-lightGray">Tuesday</p>
+              <span class="text-[16.8px] text-lightGray">08:00 - 18:00</span>
+            </div>
+            <div class="flex justify-between border-b border-teal py-3">
+              <p class="text-lightGray">Wednesday</p>
+              <span class="text-[16.8px] text-lightGray">08:00 - 18:00</span>
+            </div>
+            <div class="flex justify-between border-b border-teal py-3">
+              <p class="text-lightGray">Thursday</p>
+              <span class="text-[16.8px] text-lightGray">08:00 - 18:00</span>
+            </div>
+            <div class="flex justify-between border-b border-teal py-3">
+              <p class="text-lightGray">Friday</p>
+              <span class="text-[16.8px] text-lightGray">08:00 - 18:00</span>
+            </div>
+            <div class="flex justify-between border-b border-teal py-3">
+              <p class="text-lightGray">Saturday</p>
+              <span class="text-[16.8px] text-lightGray">08:00 - 14:00</span>
+            </div>
+            <div class="flex justify-between py-3">
+              <p class="text-lightGray">Sunday</p>
+              <span class="text-lightGray">Closed</span>
+            </div>
+          </div>
+
+          <div class="relative w-full md:w-3/5 md:h-[580px]">
+            <img
+              src="../img/about-img.avif"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+
+            <div
+              class="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-t from-darkTeal to-white/0"
+            ></div>
+
+            <div class="absolute inset-0 flex items-center justify-center">
+              <a
+                href="#"
+                class="bg-darkTeal text-white text-[22px] font-medium py-3 px-6 w-[90%] text-center sm:w-72"
+              >
+                Book An Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-offWhite" id="newsletter">
+      <div class="px-6 py-20 md:container md:mx-auto">
+        <div
+          class="bg-teal px-5 pt-12 pb-6 flex flex-col sm:flex-row sm:items-center sm:gap-10 sm:px-12 sm:py-14"
+        >
+          <div class="sm:w-1/2">
+            <h4
+              class="text-aqua text-[22px] font-semibold pb-5 sm:text-[28px] md:text-4xl"
+            >
+              Subscribe to Newsletter!
+            </h4>
+            <p
+              class="text-offWhite text-[15px] font-light mb-12 sm:mb-0 md:text-[17px]"
+            >
+              Latest updates on dental care tips, exclusive promotions, and
+              exciting news. Join our community of smiles today!
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-3 sm:w-1/2">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="ilorielijah@gmail.com"
+              class="w-full px-4 py-3"
+            />
+
+            <button
+              type="submit"
+              class="bg-darkTeal text-white px-4 py-3 w-full"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-darkTeal" id="footer">
+      <div class="px-6 py-24 sm:px-12 md:py-28 md:container md:mx-auto">
+        <div
+          class="flex flex-col gap-11 mb-12 md:w-full md:flex-row md:justify-between"
+        >
+          <div class="flex flex-col gap-11">
+            <h1 class="text-offWhite text-2xl font-light">
+              <span class="font-semibold text-[26px] text-paleCyan">Verve</span
+              >Dent
+            </h1>
+            <div class="flex gap-6">
+              <i
+                class="fa-brands fa-linkedin text-2xl text-teal bg-white px-3 py-1"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-2xl text-teal bg-white px-3 py-1"
+              ></i>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-aqua uppercase text-sm font-light mb-5 mb-11">
+              menu
+            </p>
+            <div
+              class="text-sm flex justify-between w-3/4 text-white gap-5 md:flex-col"
+            >
+              <div class="flex flex-col gap-5">
+                <a href="#" class="hover:underline">About Us</a>
+                <a href="#" class="hover:underline hidden md:block">Services</a>
+                <a href="#" class="hover:underline">Pricing</a>
+                <a href="#" class="hover:underline md:hidden">Contact</a>
+              </div>
+              <div class="flex flex-col gap-5">
+                <a href="#" class="hover:underline hidden md:block">Blog</a>
+                <a href="#" class="hover:underline hidden md:block">Contact</a>
+                <a href="#" class="hover:underline md:hidden">Services</a>
+                <a href="#" class="hover:underline md:hidden">Blog</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-aqua uppercase text-sm font-light mb-5 mb-11">
+              useful links
+            </p>
+            <div
+              class="text-sm flex justify-between w-[79%] text-white gap-4 md:flex-col"
+            >
+              <div class="flex flex-col gap-5">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline hidden md:block"
+                  >Cookie Policy</a
+                >
+                <a href="#" class="hover:underline">Licensing</a>
+              </div>
+              <div class="flex flex-col gap-5">
+                <a href="#" class="hover:underline md:hidden">Cookie Policy</a>
+                <a href="#" class="hover:underline">404</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-aqua uppercase text-sm font-light mb-5 mb-11">
+              contact
+            </p>
+            <div class="flex flex-col gap-5">
+              <div>
+                <p class="text-sm flex text-white">123 Rue du Sourire 75008</p>
+                <p class="text-sm flex text-white">Paris, France</p>
+              </div>
+              <div class="flex justify-between w-[81%] md:flex-col gap-5">
+                <a href="#" class="text-sm flex text-white hover:underline"
+                  >ilorielijah@gmail.com</a
+                >
+                <p class="text-sm flex text-white hover:underline">
+                  +44 111 333 555
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center text-sm text-white py-4 border-t border-aqua pt-10"
+        >
+          Design inspired by
+          <a
+            href="https://www.framer.com/marketplace/templates/vervedent/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-blue-600 hover:underline"
+          >
+            VerveDent by Cristian Mielu
+          </a>
+          on Framer.
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
